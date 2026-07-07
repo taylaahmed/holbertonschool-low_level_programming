@@ -14,11 +14,11 @@ long int l;
 long long int e;
 float f;
 
-printf("Size of char: %d byte(s)\n", (int)sizeof(c));
-printf("Size of int: %d byte(s)\n", (int)sizeof(i));
-printf("Size of long int: %d byte(s)\n", (int)sizeof(l));
-printf("Size of long long int: %d byte(s)\n", (int)sizeof(e));
-printf("Size of float: %d byte(s)\n", (int)sizeof(f));
+printf("Size of a char: %d byte(s)\n", (int)sizeof(c));
+printf("Size of an int: %d byte(s)\n", (int)sizeof(i));
+printf("Size of a long int: %d byte(s)\n", (int)sizeof(l));
+printf("Size of a long long int: %d byte(s)\n", (int)sizeof(e));
+printf("Size of a float: %d byte(s)\n", (int)sizeof(f));
 
 return (0);
 }
