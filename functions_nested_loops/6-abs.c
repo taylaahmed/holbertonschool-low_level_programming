@@ -3,6 +3,7 @@
 
 /**
 * _abs - print plus, zero, negetive
+* @n: character to checkout
 *
 * Return: depending on n value
 */
