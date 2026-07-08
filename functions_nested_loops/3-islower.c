@@ -2,6 +2,7 @@
 
 /**
  * _islower - prints based on ASCII numbers
+ * @c: character to check
  *
  * Return: Nothing
  */

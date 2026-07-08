@@ -2,6 +2,7 @@
 
 /**
  * _isalpha - print 1 if it is a character value
+ * @c: character to check
  *
  * Return: Always 0.
  */
