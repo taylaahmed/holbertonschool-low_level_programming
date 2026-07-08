@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * _isalpha - print 1 if it is a character value
  *
  * Return: Always 0.
  */
