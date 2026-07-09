@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* _isdigit print 1 if Capital print 0 if lowercase
+* _isdigit - print 1 if Capital print 0 if lowercase
 * @c: integer
 *
 * Return: 0 or 1
