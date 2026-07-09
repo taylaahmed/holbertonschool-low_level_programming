@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
-* _isupper- print numbers to 98
-* @n: integer
+* _isupper- print 1 if Capital print 0 if lowercase
+* @c: integer
 *
-* Return: 0
+* Return: 0 or 1
 */
 
 int _isupper(int c)
