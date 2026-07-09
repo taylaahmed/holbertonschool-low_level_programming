@@ -1,9 +1,19 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_last_digit - of numbers in function
+ * @i: character to check for
  *
- * Return: Always 0.
+ * Return: value of last
  */
 
-int print_last_digit(int);
+int print_last_digit(int i)
+{
+int last = i % 10;
+if (i < 0)
+{
+(last = -last);
+}
+_putchar(last + '0');
+return (last);
+}
