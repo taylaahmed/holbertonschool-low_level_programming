@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * mul - check the code
  * @a: integer 1
  * @b: integer 2
  *
