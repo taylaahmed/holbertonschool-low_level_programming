@@ -2,9 +2,7 @@
 
 /**
  * times_table - check the code
- * @n: character to check
- * @i: character to check
- * @product: character to check
+ *
  *
  * Return: void
  */

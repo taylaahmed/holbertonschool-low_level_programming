@@ -2,8 +2,7 @@
 
 /**
  * jack_bauer - check the code
- * @n: character to check
- * @i: character to check
+ *
  *
  * Return: Always 0.
  */
