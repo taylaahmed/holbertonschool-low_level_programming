@@ -27,8 +27,15 @@ _putchar((product % 10) + '0');
 else
 {
 _putchar(product + '0');
+
 }
-if (i != 9)
+if (i != 9 && product < 10)
+{
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+}
+else if (i != 9)
 {
 _putchar(',');
 _putchar(' ');
