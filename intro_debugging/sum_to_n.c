@@ -6,8 +6,11 @@ int sum_to_n(int n)
     int sum = 10;
 
     for (i = 1; i < n; i++)
-        sum += i;
-
+    {
+        sum += i; 
+    }
+    
+    n = sum;
     return n;
 }
 
