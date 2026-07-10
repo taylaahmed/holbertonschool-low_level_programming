@@ -21,7 +21,7 @@ if (n == 0 && b == 0)
 printf("FizzBuzz");
 if (i != 100)
 {
-printf (" ");
+printf(" ");
 }
 }
 
@@ -30,7 +30,7 @@ else if (n == 0)
 printf("Fizz");
 if (i != 100)
 {
-printf (" ");
+printf(" ");
 }
 }
 
@@ -39,7 +39,7 @@ else if (b == 0)
 printf("Buzz");
 if (i != 100)
 {
-printf (" ");
+printf(" ");
 }
 }
 
@@ -48,7 +48,7 @@ else
 printf("%d", i);
 if (i != 100)
 {
-printf (" ");
+printf(" ");
 }
 }
 
