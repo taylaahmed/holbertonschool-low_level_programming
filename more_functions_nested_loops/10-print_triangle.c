@@ -27,7 +27,7 @@ _putchar(' ');
 
 for (hash = 0; hash < row; hash++)
 {
- _putchar('#');
+_putchar('#');
 }
 _putchar('\n');
 }
