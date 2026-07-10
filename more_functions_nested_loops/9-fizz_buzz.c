@@ -13,23 +13,25 @@ int i = 1;
 
 for (i = 1; i <= 100; i++)
 {
+int n = i % 3;
+int b = i % 5;
 
-if (i % 3 == 0 && i % 5 == 0)
+if (n == 0 && b == 0)
 {
 printf("FizzBuzz ");
 }
 
-if (i % 3 == 0)
+if (n == 0)
 {
 printf("Fizz ");
 }
 
-if (i % 5 == 0)
+if (b == 0)
 {
 printf("Buzz ");
 }
 
-else
+else if (b != 0 && n != 0)
 {
 printf("%d ", i);
 }
