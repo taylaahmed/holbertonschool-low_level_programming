@@ -18,11 +18,8 @@ int b = i % 5;
 
 if (n == 0 && b == 0)
 {
-printf("FizzBuzz");
-if (i != 100)
-{
-printf(" ");
-}
+printf("FizzBuzz ");
+
 }
 
 else if (n == 0)
@@ -45,13 +42,8 @@ printf(" ");
 
 else
 {
-printf("%d", i);
-if (i != 100)
-{
-printf(" ");
+printf("%d ", i);
 }
-}
-
 }
 printf("\n");
 return (0);
