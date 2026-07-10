@@ -21,17 +21,17 @@ if (n == 0 && b == 0)
 printf("FizzBuzz ");
 }
 
-if (n == 0)
+else if (n == 0)
 {
 printf("Fizz ");
 }
 
-if (b == 0)
+else if (b == 0)
 {
 printf("Buzz ");
 }
 
-else if (b != 0 && n != 0)
+else
 {
 printf("%d ", i);
 }
