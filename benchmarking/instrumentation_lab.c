@@ -55,6 +55,8 @@ int main(void)
     unsigned long checksum;
 
     /* Students must add clock-based timing and print required lines. */
+    clock_t start_total;
+    clock_t end_total;
     clock_t start;
     clock_t end;
     double total;
@@ -62,26 +64,25 @@ int main(void)
     double process;
     double reduce;
 
+    start_total = clock();
+
     start = clock();
-    end = clock();
-    total = (double)(end - start) / (double)CLOCKS_PER_SEC;
-
-
     build_dataset();
-    start = clock();
     end = clock();
     data = (double)(end - start) / (double)CLOCKS_PER_SEC;
 
-    process_dataset();
-    checksum = reduce_checksum();
     start = clock();
+    process_dataset();
     end = clock();
     process = (double)(end - start) / (double)CLOCKS_PER_SEC;
 
-    reduce_checksum();
     start = clock();
+    checksum = reduce_checksum();
     end = clock();
     reduce = (double)(end - start) / (double)CLOCKS_PER_SEC;
+
+    end_total = clock();
+    total = (double)(end_total - start_total) / (double)CLOCKS_PER_SEC;
     
 
     if (checksum == 0ul)
