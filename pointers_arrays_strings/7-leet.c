@@ -1,10 +1,10 @@
 #include "main.h"
 
 /*
-* leet - check code
-* @*i: char var
+* leet - replaces letter with corresponding numbers
+* @i: char var
 *
-* Return: i
+* Return: value of i
 */
 
 char *leet(char *i)
