@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
 * _atoi - check the code
 * @*s: char var
 * Return: 
