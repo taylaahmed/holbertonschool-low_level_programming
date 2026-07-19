@@ -3,7 +3,7 @@
 /*
 * leet - check code
 * @*i: char var
-* 
+*
 * Return: i
 */
 
