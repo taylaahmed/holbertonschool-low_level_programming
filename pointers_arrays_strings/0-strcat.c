@@ -1,9 +1,9 @@
 #include "main.h"
 
 /*
-* _strcat - check code
-* @*dest: var
-* @*src: var
+* _strcat - concatenates two strings
+* @dest: var
+* @src: var
 *
 * Return: string of dest
 */
