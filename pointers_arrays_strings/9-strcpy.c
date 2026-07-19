@@ -2,8 +2,8 @@
 
 /**
 * _strcpy - check code
-* @*dest: var char
-* @*src: var char
+* @dest: var char
+* @src: var char
 *
 * Return: value of the pointer to dest
 */

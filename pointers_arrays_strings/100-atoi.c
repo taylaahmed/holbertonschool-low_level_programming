@@ -2,7 +2,7 @@
 
 /**
 * _atoi - check the code
-* @*s: char var
+* @s: char var
 * Return: 
 */
 
