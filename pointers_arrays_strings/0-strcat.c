@@ -1,14 +1,14 @@
 #include "main.h"
 
 /*
-* _strcat - concatenates two strings
-* @dest: var
-* @src: var
-*
-* Return: string of dest
-*/
+ * _strcat - concatenates two strings
+ * @dest: var
+ * @src: var
+ *
+ * Return: string of dest
+ */
 
-char *_strcat(char *dest, char *src)
+ char *_strcat(char *dest, char *src)
 {
 int i = 0;
 int n = 0;
