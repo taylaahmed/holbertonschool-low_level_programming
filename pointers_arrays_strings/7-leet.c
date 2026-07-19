@@ -37,7 +37,7 @@ n[9] = '1';
 
 for (c = 0; i[c] != '\0'; c++)
 {
-for (b = 0; b <= 7; b++)
+for (b = 0; b <= 9; b++)
 {
 if (i[c] == letters[b])
 {
