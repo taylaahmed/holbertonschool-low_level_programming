@@ -2,9 +2,9 @@
 
 /*
 * leet - check code
-* @*a: char var
+* @*i: char var
 * 
-* Return: a
+* Return: i
 */
 
 char *leet(char *i)
