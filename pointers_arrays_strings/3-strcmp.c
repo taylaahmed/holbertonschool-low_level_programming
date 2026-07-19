@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
 * _strcmp - check code
 * @*s1: var 1
 * @*s2: var 2

@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
 * _strncpy - check code
 * @*dest: var
 * @*src: var

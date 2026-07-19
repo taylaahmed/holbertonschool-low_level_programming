@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
 * puts2 - check code
 * @*str - var
 *

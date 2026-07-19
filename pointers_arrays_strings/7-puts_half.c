@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
 * puts_half - check code
 * @*str: var
 */

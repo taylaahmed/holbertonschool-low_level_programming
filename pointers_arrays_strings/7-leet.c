@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
 * leet - replaces letter with corresponding numbers
 * @i: char var
 *

@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
 * cap_string - check code
 * @*a: char car
 *

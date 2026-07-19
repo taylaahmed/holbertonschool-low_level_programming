@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
 * string_toupper - check code
 * @*a: char var
 *

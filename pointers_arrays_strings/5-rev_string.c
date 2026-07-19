@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
 * rev_string - check code
 * @*s: var
 */

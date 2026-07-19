@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-/*
+/**
 * print_array - check code
 * @*a: int var
 * @n: int var
