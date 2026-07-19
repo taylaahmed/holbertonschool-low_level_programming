@@ -1,8 +1,8 @@
 #include "main.h"
 
-/*
+/**
 * reverse_array - check code
-* @*a: array
+* @a: array
 * @n: max array
 */
 

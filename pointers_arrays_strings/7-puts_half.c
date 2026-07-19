@@ -2,7 +2,7 @@
 
 /**
 * puts_half - check code
-* @*str: var
+* @str: var
 */
 
 void puts_half(char *str)

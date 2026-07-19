@@ -2,7 +2,7 @@
 
 /**
 * string_toupper - check code
-* @*a: char var
+* @a: char var
 *
 * Return: array a
 */

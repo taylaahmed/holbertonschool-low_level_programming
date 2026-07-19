@@ -2,7 +2,7 @@
 
 /**
 * rev_string - check code
-* @*s: var
+* @s: var
 */
 
 void rev_string(char *s)

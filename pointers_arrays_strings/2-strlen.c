@@ -3,7 +3,7 @@
 
 /**
 * _strlen - function
-* @*s: variable
+* @s: variable
 *
 * Return: value of l
 */

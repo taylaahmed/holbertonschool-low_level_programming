@@ -2,8 +2,8 @@
 
 /**
 * _strncpy - check code
-* @*dest: var
-* @*src: var
+* @dest: var
+* @src: var
 * @n: int var
 *
 * Return: string of dest

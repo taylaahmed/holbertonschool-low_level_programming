@@ -3,7 +3,7 @@
 
 /**
 * print_array - check code
-* @*a: int var
+* @a: int var
 * @n: int var
 */
 

@@ -2,8 +2,8 @@
 
 /**
 * _strcmp - check code
-* @*s1: var 1
-* @*s2: var 2
+* @s1: var 1
+* @s2: var 2
 *
 * Return: value
 */

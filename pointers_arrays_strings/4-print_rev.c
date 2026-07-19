@@ -1,8 +1,8 @@
 #include "main.h"
 
-/*
+/**
 * print_rev - check code
-* @*s: variable
+* @s: variable
 *
 */
 
