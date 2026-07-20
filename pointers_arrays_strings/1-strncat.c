@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _strcat - check code
+* _strncat - check code
 * @dest: var
 * @src: var
 * @n: int var
