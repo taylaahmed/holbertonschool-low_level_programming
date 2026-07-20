@@ -6,7 +6,7 @@
 * _strdup - check code
 * @str: var
 *
-* Return:
+* Return: NULL or array
 */
 
 char *_strdup(char *str)
@@ -27,7 +27,7 @@ c++;
 
 array = malloc((c + 1) * sizeof(char));
 
-if (c == 0)
+if (array == 0)
 {
 return (NULL);
 }
