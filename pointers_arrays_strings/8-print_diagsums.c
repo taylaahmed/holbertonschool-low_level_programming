@@ -4,7 +4,7 @@
 /**
 * print_diagsums - check code
 * @a: var
-* @size; var
+* @size: var
 *
 * Return: no return void
 */
