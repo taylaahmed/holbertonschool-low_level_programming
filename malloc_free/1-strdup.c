@@ -19,12 +19,18 @@ if (str == NULL)
 {
 return (NULL);
 }
+
 while (str[c] != 0)
 {
 c++;
 }
 
 array = malloc((c + 1) * sizeof(char));
+
+if (c == 0)
+{
+return (NULL);
+}
 
 for (i = 0; i < c; i++)
 {
