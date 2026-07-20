@@ -2,7 +2,7 @@
 
 /**
 * puts2 - check code
-* @str - var
+* @str: var
 *
 */
 
