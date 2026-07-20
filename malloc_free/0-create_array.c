@@ -20,6 +20,9 @@ if (size == 0)
     return (NULL);
 }
 
+if (array == NULL)
+    return (NULL);
+
 for (i = 0; i < size; i++)
 {
     array[i] = c;
