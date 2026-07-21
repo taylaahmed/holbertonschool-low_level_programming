@@ -22,9 +22,6 @@ array = malloc(height * sizeof(int *));
 
 if (array == NULL)
 	{
-	for (i = 0; i < height; i++)
-	free(array[i]);
-
 	free(array);
 	return (NULL);
 	}
@@ -35,14 +32,13 @@ if (array == NULL)
 
 	if (array[i] == NULL)
 	{
-	while (i > 0)
+	while (i >= 0)
 	{
-		i--;
 	free(array[i]);
-
+		i--;
+	}
 	free(array);
 	return (NULL);
-	}
 	}
 }
 
