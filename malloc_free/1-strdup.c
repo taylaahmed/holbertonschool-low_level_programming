@@ -1,34 +1,40 @@
 #include "main.h"
+#include <stddef.h>
 #include <stdlib.h>
 
 /**
 * _strdup - check code
 * @str: var
 *
-* Return: array duplicate
+* Return:
 */
 
 char *_strdup(char *str)
 {
+int c = 0;
+int i;
 char *array;
-int i = 0;
-int n;
 
-	while (str[i] != '\0')
-	{
-	i++;
-	}
+if (str == NULL)
+{
+return (NULL);
+}
+while (str[c] != 0)
+{
+c++;
+}
 
-	array = malloc(i * sizeof(char));
+array = malloc((c + 1) * sizeof(char));
 
-	if (str == 0 || array == NULL)
-	{
-	return (NULL);
-	}
-	for (n = 0; n < i; n++)
-	{
-	array[n] = str[n];
-	}
+if (array == NULL)
+{
+return (NULL);
+}
 
+for (i = 0; i < c; i++)
+{
+array[i] = str[i];
+}
 return (array);
+
 }
