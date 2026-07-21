@@ -18,22 +18,35 @@ int j;
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-array = malloc(width * sizeof(int *));
+array = malloc(height * sizeof(int *));
 
-	for (i = 0; i < width; i++)
-		array = malloc(height * sizeof(int));
+if (array == NULL)
+	{
+	for (i = 0; i < height; i++)
+	free(array[i]);
 
-	for (i = 0; i < width; i++)
+	free(array);
+	return (NULL);
+	}
+
+	for (i = 0; i < height; i++)
+	{
+		array[i] = malloc(width * sizeof(int));
+
+	if (array[i] == NULL)
+	{
+	for (i = 0; i < height; i++)
+	free(array[i]);
+
+	free(array);
+	return (NULL);
+	}
+	}
+
+	for (i = 0; i < height; i++)
 		{
-		for (j = 0; j < height; j++)
+		for (j = 0; j < width; j++)
 		array[i][j] = 0;
 		}
 	return (array);
-
-for (i = 0; i < width; i++)
-free(array[i]);
-
-free(array);
-
-return (0);
 }
