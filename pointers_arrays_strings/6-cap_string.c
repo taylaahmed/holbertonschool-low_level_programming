@@ -7,33 +7,19 @@
 * Return: value of a
 */
 
-char *cap_string(char *a)
+char *cap_string(char *c)
 {
-int n = 0;
+int count;
 
-for (n = 0; a[n] != '\0'; n++)
+for (count = 0; c[count] != '\0'; count++)
 {
-if (a[n - 1] >= 32 && a[n - 1] <= 47 && a[n - 1] != 45)
+if (c[count - 1] == ',' || c[count - 1] == ';' || c[count - 1] == '.' || c[count - 1] == '!' || c[count - 1] == '?' || c[count - 1] == '"' || c[count - 1] == '(' || c[count - 1] == ')' || c[count - 1] == '{' || c[count - 1] == '}' || c[count - 1] == ' ' || c[count - 1] == '\n' || c[count - 1] == '\t')
 {
-if (a[n] >= 'a' && a[n] <= 'z')
+if (c[count] >= 'a' && c[count] <= 'z')
 {
-a[n] -= 32;
-}
-}
-if (a[n - 1] == '\n' || a[n - 1] == '\t')
-{
-if (a[n] >= 'a' && a[n] <= 'z')
-{
-a[n] -= 32;
-}
-if (a[n - 1] == '{' || a[n - 1] == '}')
-{
-if (a[n] >= 'a' && a[n] <= 'z')
-{
-a[n] -= 32;
+c[count] -= 32;
 }
 }
 }
-}
-return (a);
+return (c);
 }
