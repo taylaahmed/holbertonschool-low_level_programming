@@ -2,7 +2,7 @@
 
 /**
 * cap_string - check code
-* @a: char car
+* @c: char car
 *
 * Return: value of a
 */
