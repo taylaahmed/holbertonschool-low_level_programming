@@ -18,14 +18,14 @@ int c;
 if (min > max)
 	return (NULL);
 
-size = max - min;
+size = max - min + 1;
 
 array = malloc(size *sizeof(int));
 
 if (array == NULL)
 	return (NULL);
 
-for (c = 0; c <= size; c++)
+for (c = 0; c < size; c++)
 	array[c] = min + c;
 
 return (array);
