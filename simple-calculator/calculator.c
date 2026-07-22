@@ -9,87 +9,75 @@
 
 int main(void)
 {
-	int n = 0; 
-	int a = 0;
-	int b = 0;
-	int r;
-	double d;
+    int n = 0; 
+    int a = 0;
+    int b = 0;
+    int r;
+    double d;
 
-	printf("1) Add\n");
-	printf("2) Subtract\n");
-	printf("3) Multiply\n");
-	printf("4) Divide\n");
-	printf("0) Bye\n");
+    printf("1) Add\n");
+    printf("2) Subtract\n");
+    printf("3) Multiply\n");
+    printf("4) Divide\n");
+    printf("0) Bye\n");
 
-	printf("Choice: ");
-	scanf("%d", &n);
+    printf("Choice: ");
+    scanf("%d", &n);
 
-	while (n != 0)
-	{
-		if (n < 0 || n >= 5)
-		{
-		printf("Invalid choice\n");
-		}
+    while (n != 0)
+    {
+        if (n < 0 || n >= 5)
+        {
+        printf("Invalid choice\n");
+        }
 
-		if (n == 1)
-		{
-		printf("A: ");
-		scanf("%d", &a);
-		printf("B: ");
-		scanf("%d", &b);
+        else
+        {
+        printf("A: ");
+        scanf("%d", &a);
+        printf("B: ");
+        scanf("%d", &b);
 
-		r = (a + b);
-		printf("Result: %d\n", r);
-		}
+        if (n == 1)
+        {
+        r = (a + b);
+        printf("Result: %d\n", r);
+        }
 
-		if (n == 2)
-		{
-		printf("A: ");
-		scanf("%d", &a);
-		printf("B: ");
-		scanf("%d", &b);
+        if (n == 2)
+        {
+        r = (a - b);
+        printf("Result: %d\n", r);
+        }
 
-		r = (a - b);
-		printf("Result: %d\n", r);
-		}
+        if (n == 3)
+        {
+        r = (a * b);
+        printf("Result: %d\n", r);
+        }
 
-		if (n == 3)
-		{
-		printf("A: ");
-		scanf("%d", &a);
-		printf("B: ");
-		scanf("%d", &b);
+        if (n == 4)
+        {
+        if (b == 0)
+        {
+        printf("Error: division by zero\n");
+        }
 
-		r = (a * b);
-		printf("Result: %d\n", r);
-		}
+        else
+        {
+        d = ((float)a / b);
+        printf("Result: %.1f\n", d);
+        }
+        }
 
-		if (n == 4)
-		{
-		printf("A: ");
-		scanf("%d", &a);
-		printf("B: ");
-		scanf("%d", &b);
+        printf("Choice: ");
+        scanf("%d", &n);
+        }
+        }
 
-		if (b == 0)
-		{
-		printf("Error: division by zero\n");
-		}
+    printf("Bye!\n");
 
-		else
-		{
-		d = ((float)a / b);
-		printf("Result: %.1f\n", d);
-		}
-		}
-
-		printf("Choice: ");
-		scanf("%d", &n);
-		}
-
-	printf("Bye!\n");
-
-	return (0);
+    return (0);
 
 
 }
