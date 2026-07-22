@@ -17,13 +17,16 @@ unsigned int c = 0;
 unsigned int i = 0;
 unsigned int b = 0;
 
-if (s1 == NULL || s2 == NULL)
-	return (" ");
+if (s1 == NULL)
+	s1 = "";
+
+if (s2 == NULL)
+	s2 = "";
 
 while (s1[c] != '\0')
 	c++;
 
-combine = malloc(c + n - 2);
+combine = malloc(c + n + 1);
 
 if (combine == NULL)
 	return (NULL);
@@ -33,7 +36,7 @@ for (b = 0; s1[b] != '\0'; b++)
 	combine[b] = s1[b];
 
 
-for (i = 0; i <= n; i++)
+for (i = 0; i < n; i++)
 {
 	combine[b] = s2[i];
 	b++;
