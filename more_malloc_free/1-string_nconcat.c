@@ -23,7 +23,7 @@ if (s1 == NULL || s2 == NULL)
 while (s1[c] != '\0')
 	c++;
 
-combine = malloc(c + n - 1);
+combine = malloc(c + n - 2);
 
 if (combine == NULL)
 	return (NULL);
