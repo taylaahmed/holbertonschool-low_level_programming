@@ -3,14 +3,23 @@
 #include <stdlib.h>
 
 /**
-* create_array - check code
-* @size: int var
-* @c: char var
+* free_grid - check code
+* @grid: array
+* @height: the 'row' variable
 *
-* Return: NULL or array
+* Return: NULL
 */
 
 void free_grid(int **grid, int height)
 {
+int i = 0;
+if (grid[i] == NULL)
+{
+for (i = 0; i < height; i++)
+	free(grid[i]);
+}
+
+if (grid == NULL)
+	free(grid);
 
 }
