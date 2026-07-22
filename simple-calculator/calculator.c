@@ -41,19 +41,16 @@ int main(void)
         if (n == 1)
         {
         r = (a + b);
-        printf("Result: %d\n", r);
         }
 
         if (n == 2)
         {
         r = (a - b);
-        printf("Result: %d\n", r);
         }
 
         if (n == 3)
         {
         r = (a * b);
-        printf("Result: %d\n", r);
         }
 
         if (n == 4)
@@ -68,9 +65,13 @@ int main(void)
         }
         }
 
+		if (n != 4)
+			printf("Result: %d\n", r);
+
         printf("Choice: ");
         scanf("%d", &n);
         }
+
         }
 
     printf("Bye!\n");
