@@ -9,16 +9,39 @@
 
 char *cap_string(char *c)
 {
-int count;
+int i = 0;
+int b = 0;
 
-for (count = 0; c[count] != '\0'; count++)
+if (c[0] >= 'a' && c[0] <= 'z')
+c[0] -= 32;
+
+for (i = 0; c[i] != '\0'; i++)
 {
-if (c[count - 1] == ',' || c[count - 1] == ';' || c[count - 1] == '.' || c[count - 1] == '!' || c[count - 1] == '?' || c[count - 1] == '"' || c[count - 1] == '(' || c[count - 1] == ')' || c[count - 1] == '{' || c[count - 1] == '}' || c[count - 1] == ' ' || c[count - 1] == '\n' || c[count - 1] == '\t')
+
+b = i - 1;
+
+if (c[b] == ',' || c[b] == ';' || c[b] == '.' || c[b] == '!')
 {
-if (c[count] >= 'a' && c[count] <= 'z')
-{
-c[count] -= 32;
+if (c[i] >= 'a' && c[i] <= 'z')
+c[i] -= 32;
 }
+
+if (c[b] == '?' || c[b] == '"' || c[b] == ')' || c[b] == '{')
+{
+if (c[i] >= 'a' && c[i] <= 'z')
+c[i] -= 32;
+}
+
+if (c[b] == '!' || c[b] == '?' || c[b] == '"' || c[b] == '(')
+{
+if (c[i] >= 'a' && c[i] <= 'z')
+c[i] -= 32;
+}
+
+if (c[b] == '}' || c[b] == ' ' || c[b] == '\n' || c[b] == '\t')
+{
+if (c[i] >= 'a' && c[i] <= 'z')
+c[i] -= 32;
 }
 }
 return (c);
