@@ -22,7 +22,7 @@ cal = malloc(nmemb * size);
 if (cal == NULL)
 	return (NULL);
 
-for (i = 0; i < nmemb; i++)
+for (i = 0; i < nmemb * size; i++)
 	cal[i] = 0;
 
 return (cal);
