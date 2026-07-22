@@ -59,9 +59,7 @@ int main(void)
         if (n == 4)
         {
         if (b == 0)
-        {
-        printf("Error: division by zero\n");
-        }
+        	printf("Error: division by zero\n");
 
         else
         {
