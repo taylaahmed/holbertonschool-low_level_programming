@@ -39,14 +39,12 @@ void simple_print_buffer(char *buffer, unsigned int size)
 int main(void)
 {
     char *a;
-    int i;
 
-    a = _calloc(2010, sizeof(char));
-    
-    for (i = 0; i < 2010; i++)
-    a[i] = 'a';
-
-    simple_print_buffer(a, 2010);
+    a = _calloc(98, sizeof(char));
+    strcpy(a, "Best");
+    strcpy(a + 4, " School! :)\n");
+    a[97] = '!';
+    simple_print_buffer(a, 98);
     free(a);
     return (0);
 }
