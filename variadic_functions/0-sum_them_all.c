@@ -3,7 +3,7 @@
 #include <stdarg.h>
 
 /**
- * sum_then_all - check code
+ * sum_them_all - check code
  * @n: unsigned constant int
  *
  * Return: 0 or n
