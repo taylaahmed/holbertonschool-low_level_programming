@@ -4,7 +4,7 @@
 
 /**
  * main - check code
- * @arcg: count number of arguments
+ * @argc: count number of arguments
  * @argv: input array
  *
  * Return: 0
