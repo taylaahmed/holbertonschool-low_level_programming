@@ -14,8 +14,8 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	unsigned int i;
-	unsigned int j;
+	unsigned int i = 0;
+	unsigned int j = 0;
 	
 	print_t types[] = {
 		{"c", print_char},
@@ -25,7 +25,6 @@ void print_all(const char * const format, ...)
 		{NULL, NULL}
 	};
 	
-	i = 0;
 	va_start(args, format);
 
 	while (format != NULL && format[i] != '\0') 
@@ -65,8 +64,11 @@ void print_float(va_list args)
 
 void print_string(va_list args)
 {
-	if (va_arg(args, char *) == NULL)
+	char *a;
+	a = va_arg(args, char *);
+		
+	if (a == NULL)
 		printf("(nil)");
-	else
-	printf("%s", (va_arg(args, char *)));
+	
+	printf("%s", a);
 }
