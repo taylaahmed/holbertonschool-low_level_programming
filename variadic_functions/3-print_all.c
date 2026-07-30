@@ -36,7 +36,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == types[j].type[0])
 			{
-				printf("%s", sep)
+				printf("%s", sep);
 				types[j].f(args);
 				sep = ", ";
 				break;
