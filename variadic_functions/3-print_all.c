@@ -16,6 +16,7 @@ void print_all(const char * const format, ...)
 	va_list args;
 	unsigned int i = 0;
 	unsigned int j = 0;
+	char *sep = "";
 	
 	print_t types[] = {
 		{"c", print_char},
@@ -35,7 +36,9 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == types[j].type[0])
 			{
+				printf("%s", sep)
 				types[j].f(args);
+				sep = ", ";
 				break;
 			}
 		j++;
@@ -46,6 +49,7 @@ void print_all(const char * const format, ...)
 	}
 
 	va_end (args);
+	printf("\n");
 
 }
 
@@ -61,7 +65,7 @@ void print_int(va_list args)
 
 void print_float(va_list args)
 {
-	printf("%.2f", va_arg(args, double));
+	printf("%f", va_arg(args, double));
 }
 
 void print_string(va_list args)
