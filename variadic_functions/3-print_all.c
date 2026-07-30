@@ -1,0 +1,72 @@
+#include "variadic_functions.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
+
+/**
+ *
+ *
+ *
+ *
+ *
+ */
+
+void print_all(const char * const format, ...)
+{
+	va_list args;
+	unsigned int i;
+	unsigned int j;
+	
+	print_t types[] = {
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_string},
+		{NULL, NULL}
+	};
+	
+	i = 0;
+	va_start(args, format);
+
+	while (format != NULL && format[i] != '\0') 
+	{
+		j = 0;
+
+		while (types[j].type != NULL) 
+		{
+			if (format[i] == types[j].type[0])
+			{
+				types[j].f(args);
+				break;
+			}
+		j++;
+		}
+	i++;
+	}
+
+	va_end (args);
+
+}
+
+void print_char(va_list args)
+{
+	printf("%c", va_arg(args, int));
+}
+
+void print_int(va_list args)
+{
+	printf("%d", va_arg(args, int));
+}
+
+void print_float(va_list args)
+{
+	printf("%.2f", va_arg(args, double));
+}
+
+void print_string(va_list args)
+{
+	if (va_arg(args, char *) == NULL)
+		printf("(nil)");
+	else
+	printf("%s", (va_arg(args, char *)));
+}
