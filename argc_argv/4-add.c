@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - check code
@@ -13,8 +14,10 @@
 int main(int argc, char *argv[])
 {
 	int i;
+	int n;
 	int a;
 	int result = 0;
+	char *str;
 
 	if (argc == 1)
 	{
@@ -24,18 +27,18 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
+		str = argv[i];
+		for (n = 0; str[n] != '\0'; n++)
+		{
+			if (str[n] < '0' || str[n] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
 
 		a = atoi(argv[i]);
-
-		if (a == 0)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
-			result += a;
-		}
+		result += a;
 	}
 
 	printf("%d\n", result);
