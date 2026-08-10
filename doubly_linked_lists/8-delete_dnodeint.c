@@ -4,10 +4,11 @@
 #include "lists.h"
 
 /**
+ * delete_dnodeint_at_index - code
+ * @head: pointer to first
+ * @index: to delete
  *
- *
- *
- *
+ * Return: 1 or -1
  */
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
@@ -21,7 +22,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		return (-1);
 
 	current = *head;
-	
+
 	if (index == 0)
 	{
 		current = *head;
@@ -30,7 +31,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		if (*head != NULL)
 			(*head)->prev = NULL;
 
-        	free(current);
+		free(current);
 		return (1);
 	}
 
@@ -45,13 +46,11 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 	before = current->prev;
 	after = current->next;
-
 	before->next = after;
 	if (after != NULL)
 		after->prev = before;
 
 	free(current);
-
 	return (1);
 }
 
