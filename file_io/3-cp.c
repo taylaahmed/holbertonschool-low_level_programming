@@ -31,6 +31,8 @@ void copies_file_content(const char *file_to, const char *file_from);
 
     copies_file_content(file_to, file_from);
 
+    return (0);
+
 }
 
 void copies_file_content(const char *file_to, const char *file_from)
